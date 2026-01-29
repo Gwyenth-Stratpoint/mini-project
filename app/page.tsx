@@ -10,26 +10,17 @@ const spaceGrotesk = Space_Grotesk({
 
 export default function HomePage() {
   return (
-    <main className="mx-auto max-w-5xl px-4 py-14">
-      
-      <section className="space-y-6">
-        <p className="text-sm text-muted-foreground">Portfolio</p>
+    <main className="mx-auto min-h-screen max-w-5xl px-4 flex items-center justify-center">
+      <div className="w-full">
+        <section className="space-y-4 text-center">
+          <h1
+            className={`${spaceGrotesk.className} text-8xl sm:text-9xl font-bold tracking-tight leading-none mt-0`}
+          >
+            Hi, I’m Gwen
+          </h1>
+        </section>
 
-        <h1
-          className={`${spaceGrotesk.className} text-6xl sm:text-7xl
- font-bold tracking-tight sm:text-5xl`}
-        >
-          Hi, I’m Gwen
-        </h1>
-
-        <p className="max-w-2xl text-base leading-7 text-muted-foreground">
-          This is a starter portfolio built with Next.js (App Router), Tailwind
-          CSS, and shadcn/ui. It showcases my internship projects and provides a
-          simple way to contact me.
-        </p>
-      </section>
-
-      <section className="mt-14 grid gap-4 sm:grid-cols-3">
+        <section className="mt-14 grid gap-4 sm:grid-cols-3">
         <a
           href="https://github.com/limgwy"
           target="_blank"
@@ -64,6 +55,7 @@ export default function HomePage() {
           </p>
         </a>
       </section>
+      </div>
     </main>
   );
 }
